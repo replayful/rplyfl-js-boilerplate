@@ -3,7 +3,12 @@
     "postcss-nested": {},
     "postcss-typescale": {},
     "postcss-utilities": {},
-    "postcss-preset-env": {},
+    "postcss-preset-env": {
+      stage: 2,
+      features: {
+        'color-mod-function': { unresolved: 'warn' }
+      }
+    },
   }
 }
 

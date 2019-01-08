@@ -7,3 +7,8 @@
 @import "./form.css";
 @import "./lists.css";
 @import "./media.css";
+
+
+#app {
+  @util center;
+}

@@ -1,8 +1,7 @@
 :root {
-  --button-background-color: transparent;
-  --button-font-color: #4a4a4a;
-  --button-border-color: #4a4a4a;
-  --button-background-color-hover: white;
+  --button-background-color: #9b9aa1;
+  --button-font-color: #fff;
+  --button-border-color: #9b9aa1;
 }
 
 button,
@@ -23,16 +22,20 @@ button,
   text-decoration: none;
   margin-bottom: var(--small-spacing);
   display: block;
-  width: 100%;
-
+ 
   &:hover {
-    background-color: var(--button-background-color-hover);
-    color: var(--blue);
+    background-color: color-mod(var(--button-background-color) lightness(80%));
+    border: 1px solid color-mod(var(--button-background-color) lightness(80%));
+    color: color(var(--button-background-color) contrast(80%));
   }
 
   &:focus {
-    /* border-color: #ccc; */
+    border-color: color-mod(var(--button-background-color) lightness(50%));
     outline: none;
+  }
+
+  &--full {
+    width: 100%;
   }
 
   &--small {
