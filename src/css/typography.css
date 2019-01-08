@@ -1,0 +1,56 @@
+
+/* Selectors */
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+/* https://github.com/francoisromain/postcss-typescale */
+@typescale {
+  scale: 1.50;          /* typographic scale */
+  font-size: 1rem;      /* default font size */
+  line-height: 1.5rem;  /* baseline grid */
+}
+
+html {
+  color: var(--font-color);
+  font-family: var(--base-font-family); 
+  font-size: 100%;
+}
+
+:--heading {
+  color: var(--font-heading-color);
+  margin: 0 0 var(--small-spacing);
+}
+
+h1{
+  typescale: 3 2;
+}
+h2{
+  typescale: 2 1.5;
+}
+h3{
+  typescale: 1 1.5;
+}
+h4{
+  typescale: 0 1;
+}
+h5{
+  typescale: -1 1;
+}
+
+p {
+  margin: 0 0 var(--small-spacing);
+  typescale: 0 1;
+}
+
+a {
+  color: var(--action-color);
+  transition: color(var(--base-duration) var(--base-timing));
+
+  &:hover {
+    color: color(var(--action-color) shade(25%));
+  }
+
+  &:focus {
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-outline-offset);
+  }
+}

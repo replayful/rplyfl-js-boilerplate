@@ -1,0 +1,28 @@
+{
+  "name": "rplyfl-js-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate for starting simple plain js projects",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --no-source-maps --experimental-scope-hoisting",
+    "lint": "eslint src/"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "parcel-bundler": "^1.11.0",
+    "postcss-nested": "^4.1.1",
+    "postcss-preset-env": "^6.5.0",
+    "postcss-typescale": "^0.2.1",
+    "postcss-utilities": "^0.8.0",
+    "stylelint": "^9.9.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

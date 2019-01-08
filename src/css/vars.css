@@ -1,0 +1,42 @@
+
+/* Mobile First */
+
+/* Small devices (tablets, 768px and up) */
+@custom-media --viewport-tablet (min-width: 768px);
+
+/* Medium devices (desktops, 992px and up) */
+@custom-media --viewport-desktop (min-width: 992px);
+
+/* Large devices (large desktops, 1200px and up) */
+@custom-media --viewport-big-desktop (min-width: 1200px);
+
+
+:root {
+  /* Fonts */
+  --base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
+  /* Spacing */
+  --base-spacing: 1.5em;
+  --small-spacing: calc(var(--base-spacing) / 2);
+
+  /* Colors */
+  --body-bg-color: #dfdfdf;
+  --font-color: #4a4a4a;
+  --font-heading-color:  #4a4a4a;
+  --action-color: blue;
+
+  /* Borders */
+  --base-border-color: #efefef;
+  --base-border: 1px solid var(--base-border-color);
+  --base-border-radius: 3px;
+
+  /* Focus */
+  --focus-outline-color: color(var(--action-color) tint(20%));
+  --focus-outline-width: 3px;
+  --focus-outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  --focus-outline-offset: 2px;
+
+  /* Animations */
+  --base-duration: 150ms;
+  --base-timing: ease;
+}

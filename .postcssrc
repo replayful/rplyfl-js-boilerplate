@@ -1,0 +1,9 @@
+{
+"plugins": {
+    "postcss-nested": {},
+    "postcss-typescale": {},
+    "postcss-utilities": {},
+    "postcss-preset-env": {},
+  }
+}
+
