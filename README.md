@@ -1,6 +1,6 @@
 # rplyfl-js-boilerplate
 
-## A simple and bare-bones boilerplate to kick start HTML/JS/CSS projects/experiments/whatever with some decent defaults and no webpack insane configs to mess with ;)
+### A simple and bare-bones boilerplate to kick start HTML/JS/CSS projects/experiments/whatever with some decent defaults and no webpack insane configs to mess with ;)
 
 - using parcel to serve and bundle prod build
 - JS linting via eslint
