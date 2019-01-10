@@ -3,6 +3,7 @@
     "postcss-nested": {},
     "postcss-typescale": {},
     "postcss-utilities": {},
+    "rucksack-css":{},
     "postcss-preset-env": {
       stage: 2,
       features: {
