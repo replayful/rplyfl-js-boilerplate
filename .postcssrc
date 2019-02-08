@@ -1,15 +1,26 @@
 {
 "plugins": {
+    "postcss-import": {},
     "postcss-nested": {},
+    "postcss-preset-env": {
+      "stage": 1,
+      "features": {
+        "nesting-rules": true,
+        "color-mod-function": true,
+        "custom-properties": {
+          "preserve": false,
+          "importFrom": "src/css/vars.css"
+        },
+        "custom-selectors": {
+          "preserve": false
+        },
+        "custom-media-queries": true
+      }
+    },
     "postcss-typescale": {},
     "postcss-utilities": {},
     "rucksack-css":{},
-    "postcss-preset-env": {
-      stage: 2,
-      features: {
-        'color-mod-function': { unresolved: 'warn' }
-      }
-    },
+    "postcss-reporter": {}
   }
 }
 
