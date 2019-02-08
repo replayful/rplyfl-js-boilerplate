@@ -10,5 +10,6 @@
 
 
 #app {
-  /* @util center; */
+  @util center;
+  background-color: var(--body-bg-color);
 }
